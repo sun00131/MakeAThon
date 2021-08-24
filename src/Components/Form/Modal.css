@@ -1,0 +1,36 @@
+
+.Modal{
+  border: 0.1px solid #000;
+  width: 1200px;
+  height: 800px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 30px;
+  margin: 100px auto;
+  line-height: 24px;
+}
+
+.unsetButton{
+  all:unset;
+}
+
+.linetext{
+  all:unset;
+  font-size: 12px;
+  text-decoration: underline;
+  color: rgb(86, 155, 86);
+}
+
+span{
+  font-size: 10px;
+}
+
+.input{
+  border-color: rgb(218, 217, 217);
+  border-radius: 3px;
+  border-width: 0.01px;
+  height: 40px;
+  width: 300px;
+  font-size: 18px;
+}
+

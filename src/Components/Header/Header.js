@@ -132,7 +132,9 @@ const HeaderComponent = () => {
       HeaderLinkUrl: ["/online"],
     },
     {
-      HeaderTab: "교육 신청/문의",
+      HeaderTab: "교육 신청",
+      HeaderLinkTab: ["교육 신청"],
+      HeaderLinkUrl: ["/eduForm"],
     },
   ]);
 
