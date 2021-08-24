@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import styled from "styled-components"
-import "./Modal.css";
+import "./Form.css";
 
 function Form() {
 
@@ -28,9 +28,10 @@ function Form() {
   `;
 
   const ModalTitle = styled.h3`
-    font-size: 30px;
-    line-height: 80px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
+    margin-bottom: 10px;
   `;
 
   const SubTitle = styled.h5`
@@ -41,8 +42,8 @@ function Form() {
   `;
 
   const ModalSubTitle = styled.h5`
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 15px;
+    line-height: 30px;
   `;
 
   const Para = styled.p`
@@ -58,8 +59,8 @@ function Form() {
 
   const ModalPara = styled.p`
     color: rgb(73, 73, 73);
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 10px;
+    line-height: 20px;
   `;
 
   const Ul = styled.ul``;
