@@ -29,7 +29,7 @@ const Item = styled.li`
   text-decoration: none;
   opacity: 0.7;
   &:hover {
-    background: linear-gradient(to right, #33d9b2, #218c74);
+    background: linear-gradient(to right, var(--sub-color), var(--main-color));
     color: white;
     i {
       opacity: 1;

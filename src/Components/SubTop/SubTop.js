@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BarComponent from "Components/Bar";
 
 const SubTop = styled.div`
-  background-color: #ecfec9;
+  background-color: var(--sub-color);
   height: 45vh;
   padding: 50px 0;
   display: flex;
@@ -48,7 +48,7 @@ const SubTopComponent = () => (
     <Bar></Bar>
     <Paragraph>
       <div>4차산업혁명시대를 이끌어 나갈 인재를 양성하는</div>
-      <div>한양미래연구소의 교육 프로그램입니다.</div>
+      <div>구름다리의 교육 프로그램입니다.</div>
     </Paragraph>
   </SubTop>
 );

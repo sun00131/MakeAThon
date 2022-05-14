@@ -45,7 +45,7 @@ const SubTitle = styled.h5`
 `;
 
 const Anchor = styled(Link)`
-  background: linear-gradient(to right, #33d9b2, #218c74);
+  background: linear-gradient(to right, var(--sub-color), var(--main-color));
   padding: 20px 30px;
   border-radius: 50px;
   border: 2px solid white;
@@ -71,7 +71,7 @@ const Poster = () => {
         <Arrow />
         <MainImg>
           <StringBox>
-            <Title>에리카에듀는</Title>
+            <Title>구름다리는</Title>
             <Title>아이들의 미래를 지원합니다</Title>
             <SubTitle>
               새로운 기술과 이론을 스스로 학습해 나갈 수 있는 동기를

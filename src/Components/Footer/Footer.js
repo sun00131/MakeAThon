@@ -41,19 +41,19 @@ const Paragraph = styled.p`
 const FooterComponent = () => (
   <Footer>
     <Section>
-      <Title>한양미래연구소</Title>
+      <Title>구름다리</Title>
       <Paragraph>
         <span>
-          (주) 일리소프트 | 대표자:안호준 | 사업자등록번호:734-81-01722
+          클라우드소프트 | 대표자:ㅁㅁㅁ | 사업자등록번호:000-00-00000
         </span>
         <span>
           본사:경기도 안산시 상록구 한양대학로 55 5공학관 지하 1층 창업1실
         </span>
         <span>
-          연구소:경기도 안산시 초지동 신명트윈타워 A동5층(원포공윈1로59)
+          연구소:경기도 안산시 초지동 신명트윈타워 A동5층 (원포공원1로 59)
         </span>
-        <span>대표전화:070-8064-0829 | FAX:031-624-9480</span>
-        <span>E-mail:hyhyedu@hanyang.ac.kr/illisoftedu@gmail.com</span>
+        <span>대표전화:000-0000-0000 | FAX:031-000-0000</span>
+        <span>E-mail:cloudsoft@hanyang.ac.kr/cloudsoft@gmail.com</span>
       </Paragraph>
     </Section>
     <Section>
@@ -67,12 +67,12 @@ const FooterComponent = () => (
       </Paragraph>
     </Section>
     <Section>
-      <Title>한양미래연구소 SNS</Title>
+      <Title>구름다리 SNS</Title>
       <Paragraph>
-        <a href="https://www.youtube.com/channel/UC-k-dVuRwgf7OuIU5D8-54w">
+        <a href="/">
           <i className="far fa-comment"></i> 블로그 바로가기
         </a>
-        <a href="https://blog.naver.com/hyhyedu">
+        <a href="/">
           <i className="fab fa-youtube"></i> 유튜브 바로가기
         </a>
       </Paragraph>

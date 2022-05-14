@@ -81,7 +81,7 @@ function Form() {
   const Button = styled.button`
     width: 180px;
     height: 60px;
-    background-color: #ecfec9;
+    background-color: var(--sub-color);
     border: 0;
     margin-bottom: 150px;
   `;

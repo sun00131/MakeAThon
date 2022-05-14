@@ -18,7 +18,7 @@
   all:unset;
   font-size: 12px;
   text-decoration: underline;
-  color: rgb(86, 155, 86);
+  color: var(--main-color);
 }
 
 span{

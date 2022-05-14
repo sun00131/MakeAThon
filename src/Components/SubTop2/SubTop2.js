@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BarComponent from "Components/Bar";
 
 const SubTopVariety = styled.div`
-  background-color: #fffabb;
+  background-color: var(--sub-color);
   height: 55vh;
   padding: 120px 15vw;
   display: flex;

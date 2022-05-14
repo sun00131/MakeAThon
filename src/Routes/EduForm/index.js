@@ -1,3 +1,4 @@
-import EduForm from "./EduForm";
+import EduFormContainer from "./EduFormContainer";
 
-export default EduForm;
+export default EduFormContainer;
+

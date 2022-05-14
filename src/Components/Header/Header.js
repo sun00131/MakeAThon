@@ -36,7 +36,7 @@ const LogoAndTitle = styled(Link)`
   width: 300px;
 `;
 const MainLogo = styled.img`
-  width: 55px;
+  width: 70px;
   height: 60px;
 `;
 
@@ -90,7 +90,7 @@ const Item = styled.li`
 
 const MSLink = styled(Link)`
   &:hover {
-    color: #388285;
+    color: var(--main-color);
     ${(props) => (props.mouse = true)}
   }
   .prevent {
@@ -100,6 +100,21 @@ const MSLink = styled(Link)`
 
 const HeaderComponent = () => {
   const [data] = useState([
+    {
+      HeaderTab: "법인 소개",
+      HeaderLinkTab: [
+        "법인 소개",
+        "연혁",
+        "사업 영역",
+        "오시는 길"
+      ],
+      HeaderLinkUrl: [
+        "/company",
+        "/history",
+        "/field",
+        "/address"
+      ],
+    },
     {
       HeaderTab: "교육 소개",
       HeaderLinkTab: [
@@ -114,27 +129,27 @@ const HeaderComponent = () => {
       HeaderLinkUrl: [
         "/introduce",
         "/online",
-        "/online",
-        "/online",
-        "/online",
-        "/online",
-        "/online",
+        "/",
+        "/",
+        "/",
+        "/",
+        "/",
       ],
-    },
-    {
-      HeaderTab: "교육 후기",
-      HeaderLinkTab: ["교육 후기", "캠프 만족도", "언론 보도"],
-      HeaderLinkUrl: ["/online", "/online", "/online"],
-    },
-    {
-      HeaderTab: "기업 소개",
-      HeaderLinkTab: ["기업 소개"],
-      HeaderLinkUrl: ["/online"],
     },
     {
       HeaderTab: "교육 신청",
       HeaderLinkTab: ["교육 신청"],
       HeaderLinkUrl: ["/eduForm"],
+    },
+    {
+      HeaderTab: "교육 후기",
+      HeaderLinkTab: ["교육 후기", "캠프 만족도", "언론 보도"],
+      HeaderLinkUrl: ["/", "/", "/"],
+    },
+    {
+      HeaderTab: "교육 문의",
+      HeaderLinkTab: ["교육 문의","자주하는 질문"],
+      HeaderLinkUrl: ["/","/"],
     },
   ]);
 
@@ -142,15 +157,18 @@ const HeaderComponent = () => {
   const [hoverVar2, updateVar2] = useState(false);
   const [hoverVar3, updateVar3] = useState(false);
   const [hoverVar4, updateVar4] = useState(false);
+  const [hoverVar5, updateVar5] = useState(false);
 
   const mouseEnter1 = () => updateVar1(true);
   const mouseEnter2 = () => updateVar2(true);
   const mouseEnter3 = () => updateVar3(true);
   const mouseEnter4 = () => updateVar4(true);
+  const mouseEnter5 = () => updateVar5(true);
   const mouseLeave1 = () => updateVar1(false);
   const mouseLeave2 = () => updateVar2(false);
   const mouseLeave3 = () => updateVar3(false);
   const mouseLeave4 = () => updateVar4(false);
+  const mouseLeave5 = () => updateVar5(false);
 
   function useScroll() {
     const [scrollY, setScrollY] = useState(0);
@@ -179,7 +197,7 @@ const HeaderComponent = () => {
         <NavBarHeader>
           <LogoAndTitle to="/">
             <MainLogo src={mainLogo} alt="main_logo" />
-            <Title>한양미래연구소</Title>
+            <Title>구름다리</Title>
           </LogoAndTitle>
           <LoginAndJoin>
             <Login to="/">로그인</Login>
@@ -191,7 +209,7 @@ const HeaderComponent = () => {
         <NavBarBottom>
           <NavBarNav>
             <Item key="0" onMouseEnter={mouseEnter1} onMouseLeave={mouseLeave1}>
-              <MSLink to="/introduce">
+              <MSLink to="/company">
                 <div>{data[0].HeaderTab}</div>
               </MSLink>
               <HeaderLink
@@ -203,7 +221,7 @@ const HeaderComponent = () => {
           </NavBarNav>
           <NavBarNav>
             <Item key="0" onMouseEnter={mouseEnter2} onMouseLeave={mouseLeave2}>
-              <MSLink to="/">
+              <MSLink to="/introduce">
                 <div>{data[1].HeaderTab}</div>
               </MSLink>
               <HeaderLink
@@ -215,7 +233,7 @@ const HeaderComponent = () => {
           </NavBarNav>
           <NavBarNav>
             <Item key="0" onMouseEnter={mouseEnter3} onMouseLeave={mouseLeave3}>
-              <MSLink to="/">
+              <MSLink to="/eduForm">
                 <div>{data[2].HeaderTab}</div>
               </MSLink>
               <HeaderLink
@@ -237,6 +255,18 @@ const HeaderComponent = () => {
               />
             </Item>
           </NavBarNav>
+          <NavBarNav>
+            <Item key="0" onMouseEnter={mouseEnter5} onMouseLeave={mouseLeave5}>
+              <MSLink to="/">
+                <div>{data[4].HeaderTab}</div>
+              </MSLink>
+              <HeaderLink
+                HeaderLinkTab={data[4].HeaderLinkTab}
+                HeaderLinkUrl={data[4].HeaderLinkUrl}
+                hoverVar={hoverVar5}
+              />
+            </Item>
+          </NavBarNav>
         </NavBarBottom>
       </NavBarWrap>
     </NavBar>
@@ -244,3 +274,4 @@ const HeaderComponent = () => {
 };
 
 export default HeaderComponent;
+
